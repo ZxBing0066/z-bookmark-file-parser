@@ -1,0 +1,53 @@
+{
+  "name": "@z-space/bookmark-parser",
+  "version": "0.0.1",
+  "description": "A browser bookmark file parser",
+  "main": "cjs/index.cjs",
+  "module": "esm/index.js",
+  "types": "types/index.d.ts",
+  "unpkg": "umd/index.min.js",
+  "jsdelivr": "umd/index.min.js",
+  "type": "module",
+  "scripts": {
+    "test": "pnpx ava",
+    "test:coverage": "pnpx c8 ava",
+    "build": "pnpx tsc && pnpx rollup -c rollup.config.js",
+    "benchmark": "node benchmark.js"
+  },
+  "files": [
+    "cjs",
+    "esm",
+    "umd",
+    "types"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZxBing0066/z-bookmarket-parser.git"
+  },
+  "keywords": [
+    "bookmark",
+    "parser"
+  ],
+  "author": "ZxBing0066",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZxBing0066/z-bookmarket-parser/issues"
+  },
+  "homepage": "https://github.com/ZxBing0066/z-bookmarket-parser#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/node": "^17.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "esno": "^0.16.3",
+    "rollup": "^2.75.6",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  }
+}
